@@ -1,23 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
-<body>
-    <h1>Login</h1>
-    <form id="loginForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <button type="submit">Login</button>
-    </form>
-    <div id="message"></div>
-    
-    <script src="login.js"></script>
-</body>
+<html>
+    <head>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="it titulo"><h1>CONCORD</h1></div>
+            <div class="it usuario"><label for="username">Username:</label></div>
+            <div class="it pass"><label for="pass">Pasword:</label></div>
+            <div class="it enteruser"><input type="text" id="username" name="username" required></div>
+            <div class="it enterpass"><input type="text" id="pass" name="pass" required></div>
+            <div class="it ingresar"><button class="in"type="submit">Ingresar</button></div>
+            <div class="it crear"><button class="reg"type="crear">Crear Usuario nuevo</div>
+            <div class="it foto"><img src="concord.jpg" alt="Logo de la página" class="logo"></div>
+        </div>
+        <script src="login.js"></script>
+    </body>
 </html>
