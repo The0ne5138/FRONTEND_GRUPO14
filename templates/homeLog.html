@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" type="text/css" href="../styles/homeLog.css">
+    
+</head>
+
+<body>
+    <div class = "cabecera"> Concord </div>
+
+    <div class="container">
+        <div class="columnaServers">
+            <h4>  Tus Servers</h4>
+            <div class="listaServidores">
+                <!-- <h6>Servidores si es que el usuario esta en alguno sino no mostrara nada.</h6>-->
+                <div class="server">Servidor 1</div>
+                <div class="server">Servidor 2</div>
+                <div class="server">Servidor 3</div>
+                <div class="server">Servidor 1</div>
+                <div class="server">Servidor 2</div>
+                <div class="server">Servidor 3</div>
+            </div>
+
+            <div class="crearServidor">
+                <!--<h6>Crear Servidor</h6>-->
+                <img src="" alt="">
+                <button class="crearServidor-btn">Crear Servidor</button>
+            </div>
+
+            <div class="exploraServidor">
+                <!--<h6>Buscar Servidor</h6>-->
+                <img src="" alt="">
+                <button class="exploraServidor-btn">Explorar Servidores</button>
+            </div>
+
+            <div class="perfilUsuario">
+                <!-- Perfil del usuario -->
+                <img src="" alt="">
+                <button class="perfilUsuario-btn">Perfil</button>
+            </div>
+            <div>
+                <button id="logout">Logout</button>
+            </div>
+        </div>
+
+        <div class="columnaCanales">
+            <!-- Columna de canales -->
+            <h2> Canales </h2>
+            <div class="canal">Canale 1</div>
+            <div class="canal">Canale 2</div>
+            <div class="canal">Canale 3</div>
+            <div class="canal">Canale 4</div>
+            <div class="canal">Canale 5</div>
+            <div class="canal">Canale 6</div>
+            <div class="crearServidor">
+                <!--<h6>Crear Servidor</h6>-->
+                <img src="" alt="">
+                <button class="crearCanal-btn">Añadir Canal</button>
+            </div>
+        </div>
+
+        <div class="columnaMensajes">
+            <div id="chat-container">
+                <h2>Mensajes del Servidor</h2>
+                <div id="chat-messages"></div>
+                <input type="text" id="message-input" placeholder="Escribe un mensaje">
+                <button id="send-button">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/homeLog.js"></script>
+    <script src="../scripts/homeChat.js"></script>
+    <script src="../scripts/profile.js"></script>
+</body>
+</html>

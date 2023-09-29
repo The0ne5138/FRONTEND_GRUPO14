@@ -1,12 +1,12 @@
-document.getElementById("container").addEventListener("submit", function (event) {
+document.getElementById("loginForm").addEventListener("submit", function (event) {
     event.preventDefault();
     login();
 });
 
 function login() {
     const data = {
-        username: document.getElementById("username").value,
-        password: document.getElementById("pass").value,
+        nombre_usuario: document.getElementById("nombre_usuario").value,
+        clave: document.getElementById("clave").value,
     };
 
     fetch("http://127.0.0.1:5000/auth/login", {
@@ -21,7 +21,8 @@ function login() {
         if (response.status === 200) {
             // Redirect to profile page if login is successful
             return response.json().then(data => {
-                window.location.href = "profile.html";
+                window.location.href = "homeLog.html";
+                //window.location.href = "profile.html";
             });
         } else {
             return response.json().then(data => {
@@ -30,6 +31,6 @@ function login() {
         }
     })
     .catch(error => {
-        document.getElementById("message").innerHTML = "An error occurred.";
+        document.getElementById("message").innerHTML = "Upss A ocurrido un error.";
     });
 }
